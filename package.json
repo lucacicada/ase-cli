@@ -1,0 +1,45 @@
+{
+  "name": "ase-cli",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "ase": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "unbuild",
+    "prepack": "unbuild",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.1.0",
+    "@types/node": "^24.2.0",
+    "ase-parser": "^0.0.18",
+    "citty": "^0.1.6",
+    "eslint": "^9.32.0",
+    "minimatch": "^10.0.3",
+    "tsx": "^4.20.3",
+    "typescript": "~5.8.3",
+    "unbuild": "^3.6.0",
+    "vitest": "^3.2.4",
+    "voidlib": "^0.0.4"
+  },
+  "pnpm": {
+    "neverBuiltDependencies": []
+  }
+}

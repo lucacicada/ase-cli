@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.cache/
+.output/
+.aseprite/
+*.aseprite
+*.log
+
+*.env
+*.env.local
+!*.env.example
