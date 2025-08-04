@@ -3,11 +3,12 @@ import { mkdir } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { defineCommand, runMain } from 'citty'
 import { extractToDir } from '.'
+import { version } from '../package.json' with { type: 'json' }
 
 const main = defineCommand({
   meta: {
     name: 'ase',
-    version: '1.0.0',
+    version,
     description: 'Aseprite CLI',
   },
   args: {
