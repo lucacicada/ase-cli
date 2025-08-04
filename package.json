@@ -1,7 +1,7 @@
 {
   "name": "ase-cli",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@10.14.0",
   "author": "Luca <git@lucacicada.me>",
   "license": "MIT",
