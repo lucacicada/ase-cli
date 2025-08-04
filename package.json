@@ -1,14 +1,17 @@
 {
   "name": "ase-cli",
   "type": "module",
-  "private": true,
   "packageManager": "pnpm@10.14.0",
+  "author": "Luca <git@lucacicada.me>",
+  "license": "MIT",
+  "repository": "https://github.com/lucacicada/ase-cli",
   "exports": {
     ".": {
       "import": "./dist/index.mjs"
     }
   },
   "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
     "ase": "./dist/cli.mjs"
